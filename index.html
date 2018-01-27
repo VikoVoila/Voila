@@ -1,398 +1,86 @@
+
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-  <title>Viko@Voila Portfolio</title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <!-- Add icon library -->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-      opacity: 1.2;
-    }
-    
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
-    .mid-field {
-      padding: 65px;
-      background-color: #f2f2f2;
-    }
+
+ <meta charsat="UTF-8">
+
+<title>VOILA</title>
+
+<link rel="stylesheet" href="custom.css">
 
 
-    .close_btn{
-      margin-right: 45%;
-    }
-    
-    .fa{
-      font-size: 35px;
-      margin-left: 15px;
-      box-decoration-break: none;
-      opacity: 1;
-    }
-    .fa-facebook-square:hover{
-      color: #3b5998;
-    }
-    .fa-github-square:hover{
-      color: #001a33;
-    }
-    .fa-quora:hover{
-      color: #bb0000;
-    }
-    .fa-linkedin-square:hover{
-      color: #007bb5;
-    }
-    .fa-youtube-square:hover{
-      color: #bb0000;
-    }
-    .fa-thumbs-o-up:hover{
-      color:  #002080;
-    }
-    #thumb{
-      margin-right: 18px;
-    }
-
-    /* h2 change */
-
-    h2 {
-  color: #333;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  position: relative;
-  margin: 30px 0 60px;
-}
-h2::after {
-  content: "";
-  width: 100px;
-  position: absolute;
-  margin: 0 auto;
-  height: 3px;
-  background: #8fbc54;
-  left: 0;
-  right: 0;
-  bottom: -10px;
-}
-    /* end */
-
-
-    /*new carousel slider*/
-
-.col-center {
-  margin: 0 auto;
-  float: none !important;
-}
-.carousel {
-  margin: 50px auto;
-  padding: 0 70px;
-}
-.carousel .item {
-  color: #999;
-  font-size: 14px;
-    text-align: center;
-  overflow: hidden;
-    min-height: 290px;
-}
-.carousel .item .img-box {
-  width: 155px;
-  height: 155px;
-  margin: 0 auto;
-  padding: 5px;
-  border: 1px solid #ddd;
-  border-radius: 50%;
-}
-.carousel .img-box img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  border-radius: 50%;
-}
-.carousel .testimonial {
-  padding: 30px 0 10px;
-}
-.carousel .overview { 
-  font-style: italic;
-}
-.carousel .overview b {
-  text-transform: uppercase;
-  color: #7AA641;
-}
-.carousel .carousel-control {
-  width: 40px;
-    height: 40px;
-    margin-top: -20px;
-    top: 50%;
-  background: none;
-}
-.carousel-control i {
-    font-size: 68px;
-  line-height: 42px;
-    position: absolute;
-    display: inline-block;
-  color: rgba(0, 0, 0, 0.8);
-    text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
-}
-.carousel .carousel-indicators {
-  bottom: -40px;
-}
-.carousel-indicators li, .carousel-indicators li.active {
-  width: 10px;
-  height: 10px;
-  margin: 1px 3px;
-  border-radius: 50%;
-}
-.carousel-indicators li { 
-  background: #999;
-  border-color: transparent;
-  box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
-}
-.carousel-indicators li.active {  
-  background: #555;   
-  box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
-}
-/* end of coursel */
+ 
    
-  </style>
-
-  <script type="text/javascript">
-    $(document).ready(function(){
-        $("form").submit(function(){
-            $(this).text("Form Submited");
-    });
-});
-    $(document).ready(function(){
-    $("#in").tooltip({title:"login", placement: "bottom"});   
-    $("#out").tooltip({title:"register", placement: "bottom"});
-    //tooltip for footer social element
-    $("#fb").tooltip({title:"Viko@Voila on facebook", placement: "left"})
-    $("#git").tooltip({title:"Viko@Voila on github", placement: "bottom"})
-    $("#quora").tooltip({title:"Viko@Voila on quora", placement: "bottom"})
-    $("#lin").tooltip({title:"Viko@Voila on linkedin", placement: "bottom"})
-    $("#yt").tooltip({title:"Viko@Voila on youtube", placement: "bottom"})
-    $("#thumb").tooltip({title:"Like Us on Facebook", placement: "right"})
-});
-  </script>
-</head>
-<body>
-
-
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Viko@Voila</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="http://localhost/Ajax/Ajax/portfolio/bootstrap/portfolio.html#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a id="in" href="user/login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-        <li><a id="out" href="user/register.php"><span class="glyphicon glyphicon-log-in"></span> REGISTER</a></li>
-      </ul>
-    </div>
+   <div class="logo">
+    <img src="Voila2.png" />
   </div>
+
+  <!     Menu Bar   >
+
+  <div id="container">
+  <div id="burger">
+          <div class="bun top"></div>
+          <div class="filling"></div>
+          <div class="bun bottom"></div>
+  </div>
+</div>
+
+<nav>
+  <ul>
+    <li>
+      <a href="#">Home</a>
+    </li>
+    <li class="green">
+      <a href="#">Jedi</a>
+    </li>
+    <li class="red">
+      <a href="#">Sith</a>
+    </li>
+    <li class="yellow">
+      <a href="#">Sentinel</a>
+    </li>
+    <li class="purple">
+      <a href="#">Samuel L. Jackson</a>
+    </li>
+  </ul>
 </nav>
 
-<div class="jumbotron"> 
-  <div class="container text-center">
-    <h1> { (oding..! } </h1>      
-    <p style="font-family: Garamond">Ethics change with technology.</p>
-     
-     <!Some text that represents "Me"...>
-    
-    <img src="Joker_Logo.jpg" class="img-circle" alt="Image">
-  </div>
-</div>
+
+<!   Navbar    >
+
+
+<div class="navbar">
+    </div>
+   
   
+</header>
 
-<div class="container-fluid bg-3 text-center">    
-  <h3>Some of my Work</h3><br>
-  <div class="row">
-    <div class="col-sm-3"> 
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-        <div class="col-sm-3">
-      <p>Adobe Phoshop-CS5</p>
-      <img src="adobe-photoshop-cs5.jpg" class="img-circle" style="width:100%; " alt="Image">
-    </div>
-    <div class="col-sm-3"> 
-      <p>After Effect</p>
-      <img src="after effect.jpg" class="img-circle" style="width:100%;" alt="Image">
-    </div>
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-  </div>
-</div><br>
-
-<div class="container-fluid bg-3 text-center">    
-  <div class="row">
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3"> 
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3"> 
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-  </div>
-</div><br><br>
-
-
-<!--div class="jumbotron" -->
 <div class="container">
-  <div class="row">
-    <div class="col-md-8 col-center m-auto">
-      <h2>Team-mates</h2>
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Carousel indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>   
-        <!-- Wrapper for carousel items -->
-        <div class="carousel-inner">
-          <div class="item carousel-item active">
-            <div class="img-box"><img src="Rajit.jpeg" alt=""></div>
-            <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
-            <p class="overview"><b>Shubham Rajit</b>, Student</p>
-          </div>
-          <div class="item carousel-item">
-            <div class="img-box"><img src="Shubham.jpeg" alt=""></div>
-            <p class="testimonial">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Utmtc tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
-            <p class="overview"><b>Shubham Shahi</b>, Student</p>
-          </div>
-          <div class="item carousel-item">
-            <div class="img-box"><img src="Abuzar.jpeg" alt=""></div>
-            <p class="testimonial">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.</p>
-            <p class="overview"><b>Md.Abuzar</b>, Student</p>
-          </div>
-        </div>
-        <!-- Carousel controls -->
-        <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
-          <i class="fa fa-angle-left"></i>
-        </a>
-        <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
-          <i class="fa fa-angle-right"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-<!--/div-->
+  <h1 class="big-title new-title">Voila Specials</h1>
+</article>
 
 
-<!--- carousel slider for profile intro  -->
 
-<!--- End of carousel slider for profile intro  -->
-
-
-<div class="mid-field">
-  <div class="container text-center">
-  <h3> The Next Content </h3>
-  
-<div class="container">
-     
-
-  <!-- Trigger the modal with a button -->
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Feedback</button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Viko@Voila</h4>
-        </div>
-     <div class="modal-body">
-      <div class="wrapper">
-<!-- Feedback Popup Form -->
-        <form action="#" method="post" name="form">
-            <img src="chat.png" class="img-circle" style="width:80px; " alt="Image">
-            <h2>Your feedback</h2>
-            <hr>
-            <div class="form-group">
-            <input type="text" name="name" placeholder="Name" class="form-control" required="">       
-          </div>
-            <br>
-          <div class="form-group">
-            <input type="text" name="mobile" placeholder="Mobile No." class="form-control" pattern="[7-9]{1}[0-9]{9}"></input>
-          </div>
-          <br>
-          <div class="form-group">
-             <input type="text" name="email" placeholder="Email" class="form-control" required="">       
-          </div>
-          <br>
-          <div class="form-group">
-             <textarea type="text" name="msg" placeholder="Message" class="form-control" required=""></textarea> 
-          </div>
-          <br>
-             <input type="submit" class="btn btn-primary" value="SEND">
-             <input type="reset" class="btn btn-default" value="Reset">
-             <p>Please mention your suggestion in above Spacebox</p>
-       </form>
-<!-- Popup Div Ends Here -->
-      </div>        
-     </div>
-
-  
-    </div>
-      
-    </div>
-  </div>
-  
-</div>
-
-
-  </div>
-</div><br><br>
-<footer class="container-fluid text-center">
-  <p>Footer Text</p>
-  <p>Copyright &copy; 2017 Viko@Voila. All Right Reserved. </p>
-  <a id="fb" href="#" class="fa fa-facebook-square"></a>
-  <a id="git" href="#" class="fa fa-github-square"></a>
-  <a id="quora" href="#" class="fa fa-quora"></a>
-  <a id="lin" href="#" class="fa fa-linkedin-square"></a>
-  <a id="yt" href="#" class="fa fa-youtube-square"></a>
-
-  <a id="thumb" href="#" class="fa fa-thumbs-o-up"></a>
-
-      </div>        
-     </div>
+<footer class="main-footer" role="contentinfo">
+<nav>
+   <ul class="nav-container" role="navigation">
+         <li><a href="gallery.html">GALLERY</a></li>
+         <li><a href="about.html">ABOUT US</a></li>
+         <li><a href="feedback.html">FEEDBACK</a></li>
+         <li><a href="#">Footer Link 4</a></li>
+         <li><a href="#">Footer Link 5</a></li>
+   </ul>
+   <p>Copyright &copy; Viko@Voila </p>
+</nav>   
 
 </footer>
+
+
 </body>
 </html>
+
+<!CSS PART>
+
